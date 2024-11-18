@@ -1,10 +1,14 @@
-@import url(fontiran.css); /* لینک فایلی که وظیفه بارگذاری فونت ها را برعهده دارد */
-@import url("../fonts/icon/bold/css/fontello.css"); /* لینک فایلی که وظیفه بارگذاری آیکن ها را برعهده دارد */
+@import url(fontiran.css);
+/* لینک فایلی که وظیفه بارگذاری فونت ها را برعهده دارد */
+@import url("../fonts/icon/bold/css/fontello.css");
+
+/* لینک فایلی که وظیفه بارگذاری آیکن ها را برعهده دارد */
 * {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
+
 :root {
   --font-color: rgba(37, 37, 37, 1);
   --bg-color: rgba(238, 241, 245, 1);
@@ -15,6 +19,7 @@
   --grey-color: rgba(137, 137, 137, 1);
   --radius: 15px;
 }
+
 body {
   font-family: 'vazir';
   font-weight: 500;
@@ -25,32 +30,46 @@ body {
   overflow: auto;
   color: var(--font-color);
 }
-h1, h2, h3, h4, h5, h6, input, textarea {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea {
   font-family: vazir;
 }
+
 h1 {
   font-weight: bold;
 }
-p, a {
+
+/* p, a {
   font-weight: 500;
   color:black
-}
+} */
 .text-small {
   font-size: 15px;
   color: rgba(41, 58, 58, 0.44);
 }
+
 .text-bold {
   font-size: 50px;
   margin: 0;
 }
+
 @media (min-width: 1200px) {
   .container {
     max-width: 1378px;
   }
 }
+
 .radius {
   border-radius: var(--radius);
 }
+
 .section-title:before {
   content: "";
   width: 6px;
@@ -60,6 +79,7 @@ p, a {
   border-radius: 50%;
   margin-left: 5px;
 }
+
 .section-title {
   font-size: 20px;
   font-weight: 600;
@@ -68,6 +88,7 @@ p, a {
   align-items: center;
   display: flex;
 }
+
 .pagination .page-link {
   position: relative;
   display: block;
@@ -79,31 +100,37 @@ p, a {
   margin: 5PX;
   border-radius: 0.6rem;
 }
+
 .pagination .page-link.active {
   background: var(--blue-color);
   color: #fff;
   border: 0;
 }
+
 /*header*/
 header .date-fa span {
   color: var(--blue-color);
   margin-left: 5px;
 }
+
 header .logo {
   background: var(--blue-color);
   padding: 10px 35px;
   border-radius: 10px;
   color: #fff;
 }
+
 header .nav-link.active {
   color: var(--blue-color);
   border-bottom: 3px solid var(--blue-color);
   border-radius: 0;
 }
+
 header .nav-link {
   padding: .25rem 1rem;
   border-radius: 10px;
 }
+
 /*header*/
 /*main*/
 main .sarkhat {
@@ -114,6 +141,7 @@ main .sarkhat {
   margin-left: 1rem;
   border-radius: 0.6rem;
 }
+
 main .sarkhat::after {
   border-top: 10px solid transparent;
   border-right: 10px solid var(--blue-color);
@@ -123,6 +151,7 @@ main .sarkhat::after {
   left: -8px;
   top: 7px;
 }
+
 main .weather {
   background: rgba(219, 102, 36, 1);
   color: #fff;
@@ -131,6 +160,7 @@ main .weather {
   margin-left: 1rem;
   border-radius: 0.6rem;
 }
+
 main .weather::after {
   border-top: 10px solid transparent;
   border-right: 10px solid rgba(219, 102, 36, 1);
@@ -140,10 +170,12 @@ main .weather::after {
   left: -8px;
   top: 7px;
 }
+
 main .weather-icon {
   color: rgba(219, 102, 36, 1);
   font-size: 25px;
 }
+
 main .oghat {
   background: rgba(37, 37, 37, 1);
   color: #fff;
@@ -152,6 +184,7 @@ main .oghat {
   margin-left: 1rem;
   border-radius: 0.6rem;
 }
+
 main .oghat::after {
   border-top: 10px solid transparent;
   border-right: 10px solid rgba(37, 37, 37, 1);
@@ -161,10 +194,12 @@ main .oghat::after {
   left: -8px;
   top: 7px;
 }
+
 main .last-news-list {
   list-style: none;
   padding: 0;
 }
+
 main .last-news-list .number {
   background: rgba(39, 90, 220, 0.26);
   padding: 5px 10px;
@@ -173,11 +208,13 @@ main .last-news-list .number {
   display: inline-block;
   margin-left: 10px;
 }
+
 main .last-news-list li {
   border-bottom: 1px solid rgba(217, 217, 217, 1);
   padding-bottom: 22px;
   margin-bottom: 22px;
 }
+
 main .last-news-list li a {
   font-size: 14px;
 }
@@ -187,6 +224,7 @@ main .last-news-list li:last-child {
   padding: 0;
   margin: 0;
 }
+
 main .top .info_top {
   position: absolute;
   bottom: 30px;
@@ -201,26 +239,33 @@ main .top .info_top {
   margin-right: auto;
   backdrop-filter: blur(15px);
 }
+
 main .top .info_top .cat {
   font-size: 13px;
   font-weight: 400;
+
 }
+
 main .top .info_top .title-top {
   font-size: 18px;
   font-weight: 700;
 }
+
 main .top .info_top .date {
   font-size: 14px;
   font-weight: 500;
 }
+
 main .my-news {
   margin-top: 1.25rem;
 }
+
 main .my-news .titr {
   font-weight: 700;
   font-size: 16px;
   text-align: justify;
 }
+
 main .my-news .lead {
   font-size: 14px;
   font-weight: 400;
@@ -228,11 +273,13 @@ main .my-news .lead {
   margin: 0.7rem 0;
   color: rgba(152, 152, 152, 1);
 }
+
 main .my-news .date {
   font-size: 13px;
   font-weight: 400;
   text-align: justify;
 }
+
 main .four-option.side .cat a {
   background: rgba(222, 230, 248, 1);
   color: rgba(36, 105, 219, 1);
@@ -241,20 +288,24 @@ main .four-option.side .cat a {
   font-size: 13px;
   font-weight: 600;
 }
+
 main .four-option.side .cover img {
   width: 62px;
   margin-bottom: 5px;
 }
+
 main .four-option.side .name {
   font-size: 13px;
   font-weight: 600;
   color: rgba(36, 105, 219, 1);
 }
+
 main .four-option.side .title {
   font-size: 13px;
   font-weight: 600;
   color: rgba(62, 61, 61, 1);
 }
+
 main .four-option.middel .cat a {
   background: rgba(222, 230, 248, 1);
   color: rgba(36, 105, 219, 1);
@@ -263,25 +314,32 @@ main .four-option.middel .cat a {
   font-size: 16px;
   font-weight: 600;
 }
+
 main .four-option.middel .cover img {
   width: 77px;
   margin-bottom: 10px;
 }
+
 main .four-option.middel .name {
   font-size: 17px;
   font-weight: 600;
   color: rgba(36, 105, 219, 1);
 }
+
 main .four-option.middel .title {
   font-size: 17px;
   font-weight: 600;
   color: rgba(62, 61, 61, 1);
 }
-main .most_comment .item, main .most_view .item {
+
+main .most_comment .item,
+main .most_view .item {
   position: relative;
   margin-left: 10px;
 }
-main .most_comment .item .shadow, main .most_view .item .shadow {
+
+main .most_comment .item .shadow,
+main .most_view .item .shadow {
   height: 100%;
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0), #000);
@@ -289,44 +347,57 @@ main .most_comment .item .shadow, main .most_view .item .shadow {
   top: 0;
   left: 0;
 }
-main .most_comment .item .info, main .most_view .item .info {
+
+main .most_comment .item .info,
+main .most_view .item .info {
   position: absolute;
   bottom: 0;
   text-align: center;
   padding: 20px;
 }
-main .most_comment .item .info .cat, main .most_view .item .info .cat {
+
+main .most_comment .item .info .cat,
+main .most_view .item .info .cat {
   font-size: 13px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
 }
-main .most_comment .item .info .titr, main .most_view .item .info .titr {
+
+main .most_comment .item .info .titr,
+main .most_view .item .info .titr {
   font-size: 16px;
   font-weight: 700;
   color: rgba(255, 255, 255);
   text-align: justify;
 }
-main .most_comment .item .info .date, main .most_view .item .info .date {
+
+main .most_comment .item .info .date,
+main .most_view .item .info .date {
   font-size: 13px;
   font-weight: 500;
   color: rgba(201, 201, 201, 1);
 }
+
 main .hots .news-list {
   padding: 0;
   list-style: none;
 }
+
 main .hots .news-list li a {
   font-size: 13px;
   font-weight: 500;
 }
+
 main .hots .news-list li {
   margin-bottom: 0.55rem;
   display: flex;
   align-items: center;
 }
+
 main .hots .news-list li:last-child {
   margin-bottom: 0
 }
+
 main .hots .news-list li::before {
   content: "\f3ac";
   background: rgba(186, 202, 239, 0.48);
@@ -337,9 +408,11 @@ main .hots .news-list li::before {
   font-size: 20px;
   margin-left: 5px;
 }
+
 main .side_video .item {
   margin-bottom: 0.5rem;
 }
+
 main .side_video .item .number {
   border-left: 4px solid rgb(36, 105, 219);
   margin-left: 0.75rem;
@@ -347,26 +420,31 @@ main .side_video .item .number {
   align-items: center;
   display: flex;
 }
+
 main .side_video .item .number span {
   color: rgb(36, 105, 219);
   font-size: 26px;
   font-weight: 700;
 }
+
 main .side_video .item .cat {
   font-size: 12px;
   font-weight: 400;
   color: rgba(50, 50, 50, 0.64);
 }
+
 main .side_video .item .title {
   font-size: 16px;
   font-weight: 700;
   color: rgba(62, 61, 61, 1);
 }
+
 main .side_video .item .date {
   font-size: 12px;
   font-weight: 400;
   color: rgba(50, 50, 50, 0.64);
 }
+
 main .info_multimedia_intobox .date {
   position: absolute;
   top: 7%;
@@ -379,6 +457,7 @@ main .info_multimedia_intobox .date {
   font-size: 14px;
   font-weight: 500;
 }
+
 main .info_multimedia_intobox .title {
   position: absolute;
   bottom: 7%;
@@ -391,39 +470,47 @@ main .info_multimedia_intobox .title {
   font-size: 18px;
   font-weight: 500;
 }
+
 main .top_news .owl-nav {
   position: absolute;
   top: 50%;
   left: 0;
   width: 100%;
 }
+
 main .top_news .owl-nav .owl-prev {
   float: right;
   margin-right: 30px;
 }
+
 main .top_news .owl-nav .owl-next {
   float: left;
   margin-left: 30px;
 }
+
 main .top_news .owl-nav [class*="owl-"] {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.36);
   border-radius: 10px;
 }
+
 main .singel .info_top .date {
   font-size: 13.6px;
   font-weight: 500;
 }
+
 main .singel .info_top .title-top {
   font-size: 22px;
   font-weight: 700;
 }
+
 main .singel .info_top .caption p {
   text-align: justify;
   font-size: 16px;
   font-weight: 400;
   line-height: 2;
 }
+
 main .singel .info_top {
   border-right: 4px solid var(--blue-color);
   padding-right: 5px;
@@ -431,6 +518,7 @@ main .singel .info_top {
   position: -webkit-sticky !important;
   position: sticky !important;
 }
+
 main .singel .video_caption::before {
   /*font-family: "Font Awesome 5 Pro";
   content: "\f144";
@@ -441,6 +529,7 @@ main .singel .video_caption::before {
   font-size: 90px;
   color: #fff;*/
 }
+
 main .singel .tags span {
   font-size: 16px;
   font-weight: 400;
@@ -450,10 +539,16 @@ main .singel .tags span {
   padding: 5px 20px;
   border-radius: 6px;
 }
-main .singel .related_post .title, main .singel .comment .title, main .cat .title-section, main .videos .title-section, main .pictures .title-section {
+
+main .singel .related_post .title,
+main .singel .comment .title,
+main .cat .title-section,
+main .videos .title-section,
+main .pictures .title-section {
   border-right: 3px solid var(--blue-color);
   padding-right: 10px;
 }
+
 main .singel .related_post ul li {
   border-bottom: 1px solid rgba(217, 217, 217, 0.3);
   padding: 10px 20px;
@@ -461,17 +556,21 @@ main .singel .related_post ul li {
   font-weight: 400;
   line-height: 19px;
 }
+
 main .singel .related_post ul li:last-child {
   border-bottom: 0
 }
+
 main .singel .comment .avatar-img {
   width: 35px;
 }
+
 main .singel .comment h5 {
   font-size: 14px;
   margin-right: 5px;
   margin-bottom: 0;
 }
+
 main .singel .comment .form-control::placeholder {
   font-size: 15px;
   font-weight: 500;
@@ -480,6 +579,7 @@ main .singel .comment .form-control::placeholder {
   text-align: justified;
   colro: rgba(175, 175, 175, 1);
 }
+
 main .singel .recive-comment .date-comment {
   font-size: 12px;
   font-weight: 600;
@@ -488,6 +588,7 @@ main .singel .recive-comment .date-comment {
   text-align: right;
   color: rgba(119, 119, 119, 1);
 }
+
 main .singel .recive-comment .user-comment {
   font-size: 14px;
   font-weight: 400;
@@ -496,6 +597,7 @@ main .singel .recive-comment .user-comment {
   text-align: right;
   color: rgba(119, 119, 119, 1);
 }
+
 main .singel .recive-comment .text-comment p {
   margin-top: 25px;
   margin-right: 10px;
@@ -505,28 +607,34 @@ main .singel .recive-comment .text-comment p {
   letter-spacing: 0em;
   color: rgba(119, 119, 119, 1);
 }
+
 main .singel .replyandlike a {
   color: var(--red-color);
 }
+
 main .singel_2 .info_top .tiny_info {
   font-size: 16px;
   font-weight: 100;
 }
+
 main .singel_2 .info_top .title {
   font-size: 20px;
   font-weight: 500;
 }
+
 main .singel_2 .info_top .caption p {
   font-size: 16px;
   font-weight: 300;
   text-align: justify;
 }
+
 main .singel_2 .col-left .title {
   font-size: 23px;
   font-weight: 400;
   text-align: right;
   margin-right: -12px;
 }
+
 main .singel_2 .col-left .time_video {
   font-size: 13px;
   font-weight: 400;
@@ -534,6 +642,7 @@ main .singel_2 .col-left .time_video {
   border: 0;
   color: #171717;
 }
+
 main .singel_2 .col-left {
   max-height: 520px;
   overflow-y: auto;
@@ -541,45 +650,53 @@ main .singel_2 .col-left {
   top: 0;
   scrollbar-width: thin;
 }
+
 main .singel_3 .p-item {
   background: #fff;
   padding: 0.75rem;
   border-radius: 12px;
 }
+
 main .singel_3 .p-item:hover {
- background: rgba(181, 181, 181, 0.14);
- cursor: pointer;
+  background: rgba(181, 181, 181, 0.14);
+  cursor: pointer;
 }
 
 
 main .singel_3 .p-item img {
   border-radius: 12px;
 }
+
 main .singel_3 .p-item .title {
   font-size: 14px;
   font-weight: 700;
   text-align: center;
 }
+
 main .singel_3 .p-item .date {
   font-size: 13px;
   font-weight: 500;
   color: rgba(149, 149, 149, 1);
   margin-top: 0.5rem;
 }
+
 main .singel_3 .owl-nav {
   position: absolute;
   top: 46%;
   left: 0;
   width: 100%;
 }
+
 main .singel_3 .owl-nav .owl-prev {
   float: right;
   margin-right: 22px;
 }
+
 main .singel_3 .owl-nav .owl-next {
   float: left;
   margin-left: 30px;
 }
+
 main .singel_3 .owl-nav [class*="owl-"] {
   border-radius: 50%;
   background: rgb(136, 136, 136);
@@ -589,39 +706,50 @@ main .singel_3 .owl-nav [class*="owl-"] {
 
 
 
-main .singel_4 .item, main .most_view .item {
+main .singel_4 .item,
+main .most_view .item {
   position: relative;
   margin-left: 10px;
 }
-main .singel_4 .item .shadow, main .most_view .item .shadow {
+
+main .singel_4 .item .shadow,
+main .most_view .item .shadow {
   height: 100%;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0),  rgba(0, 0, 0, 0.6));
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
   position: absolute;
   top: 0;
   left: 0;
 }
-main .singel_4 .item .info, main .most_view .item .info {
+
+main .singel_4 .item .info,
+main .most_view .item .info {
   position: absolute;
   bottom: 0;
   text-align: center;
   padding: 20px;
 }
-main .singel_4 .item .info .cat, main .most_view .item .info .cat {
+
+main .singel_4 .item .info .cat,
+main .most_view .item .info .cat {
   font-size: 13px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
-	background: var(--blue-color);
-	padding: 5px 10px;
-	border-radius: 0.6rem;
+  background: var(--blue-color);
+  padding: 5px 10px;
+  border-radius: 0.6rem;
 }
-main .singel_4 .item .info .titr, main .most_view .item .info .titr {
+
+main .singel_4 .item .info .titr,
+main .most_view .item .info .titr {
   font-size: 16px;
   font-weight: 700;
   color: rgba(255, 255, 255);
   text-align: justify;
 }
-main .singel_4 .item .info .date, main .most_view .item .info .date {
+
+main .singel_4 .item .info .date,
+main .most_view .item .info .date {
   font-size: 13px;
   font-weight: 500;
   color: rgba(201, 201, 201, 1);
@@ -630,33 +758,41 @@ main .singel_4 .item .info .date, main .most_view .item .info .date {
 
 /*main*/
 /*footer*/
-footer .fcol { /*margin-left: 0.5rem*/ padding: 0 20px;
+footer .fcol {
+  /*margin-left: 0.5rem*/
+  padding: 0 20px;
 }
+
 footer .fcol-1 .social img {
   width: 21px;
   margin-left: 0.25rem
 }
+
 footer .fcol-1 .des {
   text-align: justify;
   font-size: 15px;
   font-weight: 100;
   line-height: 28px;
 }
+
 footer .fcol-2 .title {
   border-bottom: 3px solid rgba(41, 41, 41, 0.2);
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
+
 footer .fcol-3 .title {
   border-bottom: 3px solid rgba(41, 41, 41, 0.2);
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
+
 footer .list-footer {
   list-style: none;
   padding: 0;
   margin-bottom: 0;
 }
+
 footer .list-footer li {
   margin-bottom: 12px;
   -webkit-box-pack: justify !important;
@@ -666,13 +802,16 @@ footer .list-footer li {
   display: -ms-flexbox !important;
   display: flex !important;
 }
+
 footer .end-list {
   display: flex;
   list-style: none;
 }
+
 footer .end-list li {
   margin-left: 1rem;
 }
+
 footer .top_page {
   position: absolute;
   bottom: 0;
@@ -681,12 +820,15 @@ footer .top_page {
   left: -5px;
   cursor: pointer;
 }
+
 footer .social .social-item {
   margin-left: 0.5rem;
 }
+
 footer .social .social-item img {
   width: 31px;
 }
+
 footer .tags span {
   background: rgba(44, 43, 56, 1);
   color: rgb(244, 244, 244);
@@ -697,6 +839,7 @@ footer .tags span {
   border-radius: 0 6px 6px 0;
   font-size: 12px;
 }
+
 footer .tags span:before {
   border-top: 12px solid transparent;
   border-right: 12px solid rgb(100, 100, 100);
@@ -706,5 +849,107 @@ footer .tags span:before {
   left: -12px;
   top: 0;
 }
+
+.zoom {
+  transition: transform .2s;
+
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.2);
+  /* IE 9 */
+  -webkit-transform: scale(1.2);
+  /* Safari 3-8 */
+  transform: scale(1.2);
+}
+
+a {
+  color: black !important;
+  text-decoration: none !important;
+  font-size: 15px !important;
+  font-weight: bolder;
+}
+
+a :hover {
+  color: blue;
+}
+
+.bgStyl {
+  background-color: #DEE6F8;
+  width: 18%;
+  border-radius: 12px;
+  padding: 8px 1px;
+  text-align: center;
+  font-size: 13px;
+  color: #2469DB;
+}
+
+.h4style {
+  font-size: 15px;
+  padding-bottom: 15px;
+}
+
+.ResizeLogo {
+  width: 30px;
+  padding-bottom: 20px;
+}
+
+.FontFooterMobile {
+  font-size: 14px;
+}
+
+/* mobile mode */
+.MBLstylPostion {
+  position: relative;
+  left: -20%;
+  top: -31%;
+}
+.MBLstylColor{
+font-size: 8px;
+color: white;
+}
+.MBLstylColor1{
+font-size: 10px;
+color: white;
+}
+
+.pos{
+  position: relative; right: 5%;bottom: 30%;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*footer*/
